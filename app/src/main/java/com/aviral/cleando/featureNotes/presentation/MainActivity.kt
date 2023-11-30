@@ -1,4 +1,4 @@
-package com.aviral.cleando
+package com.aviral.cleando.featureNotes.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
