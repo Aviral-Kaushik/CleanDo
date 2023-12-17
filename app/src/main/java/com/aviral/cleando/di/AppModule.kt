@@ -7,6 +7,7 @@ import com.aviral.cleando.featureNotes.data.repository.NoteRepositoryImplementat
 import com.aviral.cleando.featureNotes.domain.repository.NoteRepository
 import com.aviral.cleando.featureNotes.domain.useCase.AddNote
 import com.aviral.cleando.featureNotes.domain.useCase.DeleteNote
+import com.aviral.cleando.featureNotes.domain.useCase.GetNote
 import com.aviral.cleando.featureNotes.domain.useCase.GetNotes
 import com.aviral.cleando.featureNotes.domain.useCase.NoteUseCases
 
@@ -40,7 +41,8 @@ class AppModuleImplementation(
         NoteUseCases(
             getNotes = GetNotes(notesRepository),
             deleteNote = DeleteNote(notesRepository),
-            addNote = AddNote(notesRepository)
+            addNote = AddNote(notesRepository),
+            getNote = GetNote(notesRepository)
         )
     }
 
